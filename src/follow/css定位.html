@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: aqua;
+            height: 350px;
+        }
+        .normal{
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+        }
+        .relative{
+            background-color: bisque;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 120px;
+            top: 40px; 
+        }
+        .box2{
+            background-color: aquamarine;
+            height: 400px;
+        }
+        .absolute{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            position: absolute;         /*absolute脱离了标准文档流，相当于把这个类架空，
+                                        *位于其下的块元素会自动上浮，且随着页面的滚动而调整位置
+                                        *是相对html标签的定位*/
+            left: 100px;
+        }
+        .box-fixed{
+            background-color: aliceblue;
+            height: 400px;
+        }
+        .fixed{
+            background-color: antiquewhite;
+            width: 100px;
+            height: 100px;
+            position: fixed;               /*小窗播放用，
+                                            *可以固定在浏览器窗口某一位置，不随页面滑动而移动
+                                            *是相对浏览器窗口的定位*/
+            right: 0;
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>相对定位</h1>
+    <div class="box1">
+        <div class="normal"></div>
+        <div class="relative"></div>
+        <div class="normal"></div>
+    </div>
+    <h1>绝对定位</h1>
+    <div class="box2">
+        <div class="normal"></div>
+        <div class="absolute"></div>
+        <div class="normal"></div>
+    </div>
+    <h1>固定定位</h1>
+    <div class="box-fixed">
+        <div class="normal"></div>
+        <div class="fixed"></div>
+        <div class="normal"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+.title{
+    margin-top: 40px;
+}
+#logoimg{
+    width: 200px;
+    height: auto;
+    margin-left: 370px;
+}
+#bodyimg{
+    display: inline-block;
+    width: 600px;
+    height: auto;
+    margin-left: 370px;
+}
+.loginform{
+    display: inline-block;
+    width: 355px;
+    border: 1px solid #ececec;
+    box-shadow: 1px 1px 1px #ececec;
+    margin-top: 50px;
+}
+.login-wrap{
+    padding: 25px;
+}
+#smalllogo{
+    width: 100px;
+    height: auto;
+}
+.context{
+    display: flex;
+}
+.inputarea{
+    margin-top: 40px;
+}
+#username, #password{
+    display: block;
+    width: 280px;
+    height: 40px;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+    padding-left: 5px;
+}
+.loginbtn{
+    margin-top: 20px;
+}
+#loginbutton{
+    width: 290px;
+    height: 40px;
+    background-color: #3385ff;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+.retrieve{
+    margin-top: 10px;
+}
+#retrievelink, #registerlink{
+    font-size: small;
+    color: #2E82FF;
+    text-decoration: none;
+}
+#retrievelink:hover, #registerlink:hover{
+    color: #3385ffaa;
+}
+.tail{
+    margin-top: 10px;
+    background-color: #F0F6FF;
+    width: 355px;
+    height: 60px;
+}
+.tailbar{
+    display: flex;
+    font-size: 15px;
+    color: #2E82FF;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.login-screen, .others{
+    margin-top: 5px;
+}
+.login-screen:hover{
+    cursor: pointer;
+    color: #3385ffaa;
+}
+#otherslist li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.register{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#registerlink{
+    font-size: 15px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: xx-small;
+    color: #7a77c8;
+}

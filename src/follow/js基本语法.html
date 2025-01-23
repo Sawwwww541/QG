@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="normal">
+        <script>
+            var x;          /*参考全局变量，它具有函数作用域，可为局部或全局变量*/
+            let y=666;        /*只能在块内，即{}内，被使用*/
+            const pi=3.14;  /*定义常数*/
+            console.log(x,y,pi);
+            x=123;
+            console.log(x,y,pi);
+            let name="牛魔";
+            let emptyvalue=null;    /*undefined表示一个变量被声明但并未被赋值
+                                    *而null表示一个变量明确被赋值为空
+                                    函数没有返回值时会返回undefined*/
+            console.log(name,emptyvalue);
+        </script>
+    </div>
+</body>
+</html>

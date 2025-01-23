@@ -1,0 +1,36 @@
+body{
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://cdn2.zzzmh.cn/wallpaper/origin/28e6a92220224132af175f40536f5b2c.png?response-content-disposition=attachment&auth_key=1738684800-54b21a23de8bcfdf055b85912708dbfff0ac22fe-0-ff290f7bf63c7dc32bdb14db90b5f43a");
+    background-size: 100%;
+}
+.title{
+    text-align: center;
+    padding: 50px;
+}
+.context table{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+td,th{
+    background-color: rgba(240, 248, 255, 0.614);
+    border: 1px solid #000;
+    text-align: center;
+}
+.tail{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+a{
+    color: #fa9393;
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.aside{
+    list-style: none;
+    margin-left: 0px;
+    padding: 0px;
+    display: inline-block;
+    background-color: rgb(114, 114, 114);
+    width: 20%;
+}
+li{
+    height: 40px;
+    margin-left: 0px;
+}
+li a{
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+li:hover{
+    background-color: rgb(255, 138, 55);
+}

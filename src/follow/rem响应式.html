@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .normal{
+            background-color: aqua;
+            width: 5rem;
+            height: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="normal">
+
+    </div>
+    <script>
+    function resethtmlfontsize(){
+        document.documentElement.style.fontSize=screen.width/10+'px';
+    }
+        resethtmlfontsize();
+
+        window.onresize=resethtmlfontsize;
+    </script>
+</body>
+</html>

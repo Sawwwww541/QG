@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showid(id){
+            console.log(id);
+        }
+        function click_event(){
+            alert("谢特");
+        }
+    </script>
+</head>
+<body>
+    <button>点我点我</button>
+    <div class="box1">芝士一个类名块</div>
+    <div class="box2" id="normal">芝士一个id块</div>
+    <div>芝士一个普通块</div>
+    <script>
+        let element_class=document.getElementsByClassName("box1")[0];
+        showid(element_class);
+        let element_id=document.getElementById("normal");
+        showid(element_id);
+        let element_tag=document.getElementsByTagName("div")[2];
+        showid(element_tag);
+
+        element_class.innerHTML='<a href="#">不跳转</a>'
+        element_id.innerText='<a href="#">不跳转</a>'
+
+        element_tag.style.color='red';
+        element_class.style.fontSize='25px';
+        
+        let button_ele=document.getElementsByTagName("button")[0];
+        showid(button_ele);
+        // button_ele.onclick=function(){      /*function是一个匿名函数,不需要在其他地方调用*/
+        //     alert("袜袄！！！");
+        // }
+        button_ele.addEventListener("click",click_event);
+    </script>
+</body>
+</html>

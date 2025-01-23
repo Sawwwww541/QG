@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+    <style>
+        /*标签选择器*/
+        p{
+            color: antiquewhite;
+            font-size: 16px;
+        }
+        /*类选择器*/
+        .highlight{
+            background-color: azure;
+        }
+        /*通用选择器*/
+        *{
+            font-family: "kaiti";
+        }
+        /*id选择器*/
+        #dui{
+            color: blueviolet;
+            font-size: large;
+        }
+        /*子代选择器，孙子！=子代，只能包含直系（儿子）*/
+        .father>p{
+            color: brown;
+            font-size: 24px;
+        }
+        /*后代选择器，选择所有的派生类，我全都要*/
+        .father p{
+            color: cornflowerblue;
+        }
+        /*伪类选择器*/
+        #element:hover{
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <p id="dui">你说得对</p>
+    <p>你说得对</p>
+    <p>你说得对</p>
+    <p>你说得对</p>
+    <p>你说得对</p>
+
+    <h1 id="element" style="color: red;">对吗</h1>
+    <h2 style="color: aqua;">对的对的</h2>
+    <h3 class="highlight">不对不对</h3>
+    <h3>不对不对</h3>
+    
+    <div class="father">
+        <p>是的是的</p>
+        <p class="son">啊对对对</p>
+        <div class="grdson">
+            <p>袜袄！！！</p>
+        </div>
+    </div>
+</body>
+</html>
