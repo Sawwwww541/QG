@@ -1,0 +1,356 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 248, 249);
+    overflow-x: hidden;
+}
+.all{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#logoimg{
+    position: absolute;
+    width: 113px;
+    height: auto;
+    top: 20px;
+    left: 30px;
+}
+.header{
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding-left: 20%;
+    background-color: rgba(255, 255, 255, 0.89);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+}
+/* 图片的放大效果 */
+.newsimg, .newsimg1, .newsimg2{
+    overflow: hidden;
+}
+.home img{
+    transition: all .4s;
+}
+.home img:hover{
+    transform: scale(1.15);
+}
+/* 背景 */
+.left{
+    position: absolute;
+    display: flex;
+    background-repeat: no-repeat;  
+    width: 27%;
+    height: 400px;
+    background-image: url("img/left-trans.svg");
+    z-index: -1;
+}
+.mid{
+    position: absolute;
+    left: 11%;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-image: url("img/halfbg2.svg");
+    z-index: -2;
+}
+.right{
+    position: absolute;
+    right: 0px;
+    display: flex;
+    width: 10%;
+    height: 400px;
+    background-image: url("img/right2.svg");
+    z-index: -1;
+}
+/* 顶部导航栏 */
+.guideline{
+    width: 100%;
+    display: flex;
+}
+.topicons{
+    margin-right: 2%;
+    margin-left: 1%;
+    position: relative;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+/* 小标签下的黄条 */
+.topicons span{
+    display: flex;
+    position: absolute;
+    top: 70%;
+    width: 24px;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ffd100, #ffd100) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.2s ease-in-out;    
+}
+.topicons:hover span{
+    background-size: 100% 100%;
+}
+
+.topicons a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 36%;
+}
+.othericons1{
+    margin-left: 10%;
+}
+.othericons2{
+    margin-left: 4%;
+}
+.othericons1 p, .othericons2 p{
+    position: relative;
+    top: 15%;
+}
+/* 一开始的介绍文本 */
+.indextext{
+    position: relative;
+    padding-top: 10%;
+}
+.ptitle{
+    margin-top: 0;
+    font-size: 52px;
+    font-family: 'Microsoft YaHei';
+    text-align: center;
+}
+.ptext1, .downloadapp{
+    font-size: 24px;
+    text-align: center;
+}
+.pcontext{
+    color: gray;
+    font-size: small;
+    text-align: center;
+}
+.home{
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+.topbar{
+    position: relative;
+}
+#newstitle{
+    display: inline-block;
+    font-size: 28px;
+}
+#showall{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#showall:hover, #checkall:hover{
+    background-color: rgba(165, 165, 165, 0.057);
+}
+.row{
+    display: flex;
+}
+/* 选中阴影 */
+.new1:hover, .new2:hover, .sixnewblock a:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+/* 第一个新闻框 */
+.new1{
+    border-radius: 20px;
+    width: 65%;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+#qishou1{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.newsimg1, .newsimg2{
+    border-radius: 20px 20px 0 0;
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.interview1 p, .interview2 p{
+    padding: 0;
+    margin: 0;
+}
+#new1title, #new2title{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+#new1intro, #new2intro{
+    font-size: 16px;
+    color: gray;
+}
+#new1date{
+    margin-top: 60px;
+    font-size: 12px;
+    color: gray;
+}
+/* 第二新闻框 */
+.new2{
+    border-radius: 20px;
+    width: 34.6%;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#qishou2{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: auto;
+}
+#new2date{
+    margin-top: 40px;
+    font-size: 12px;
+    color: gray;
+}
+/* 第一行俩模块要单独调，后面六个模块批量调试 */
+.sixnewblock{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.sixnewblock a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 31.5%;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+.newsimg{
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+.newsimg img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+.newintro{
+    position: relative;
+    height: 136px;
+    border-radius: 0 0 20px 20px;
+    padding: 25px;
+    background-color: white;
+}
+.newintro p{
+    padding: 0;
+    margin: 0;
+}
+/* 批量操作图片下文本 */
+#newtitle{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+#newintro{
+    font-size: 16px;
+    color: gray;
+}
+#newdate{
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    bottom: 25px;
+}
+.checkall{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 48px;
+    justify-content: center;
+}
+#checkall{
+    font-size: 20px;
+    padding: 10px 20px 20px 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.footer{
+    position: relative;
+    background-color: #f3f3f4;
+    width: 100%;
+    height: 324px;
+    padding-top: 48px;
+}
+.footercontent{
+    position: relative;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-bottom: 44px;
+}
+.logo2{
+    position: absolute;
+    display: inline-block;
+    width: 112px;
+    top: 0;
+}
+#logoimg2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.footerlist{
+    margin-left: 38%;
+    display: inline-block;
+}
+.footercontent dl{
+    margin-right: 111px;
+    margin-top: 0;
+    display: inline-block;
+}
+.footercontent dt{
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+.footercontent dd, .footercontent dd a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 0;
+    margin-bottom: 15px;
+    color: #656a72;
+}
+.footercontent dd a:hover, .finalbar a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.finalbar{
+    border-top: 1px solid rgb(230, 230, 230);
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    color: #11192559;
+    font-size: 12px;
+}
+.finalbar a{
+    text-decoration: none;
+    color: #11192559;
+}
